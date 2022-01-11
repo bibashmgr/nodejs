@@ -1,0 +1,1 @@
+Here is the content of third.txt file: This is first.txt file. || This is second.txt file.

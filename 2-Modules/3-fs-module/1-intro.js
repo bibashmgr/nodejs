@@ -17,17 +17,17 @@ const fs = require('fs');
 // path: filename or file descriptor
 // options: object containing encoding & flag
 
-const firstText = fs.readFileSync(
+const firstTextAsync = fs.readFileSync(
   './2-Modules/3-fs-module/temp/first.txt',
   'utf-8'
 );
-console.log(firstText);
+console.log(firstTextAsync);
 
-const secondText = fs.readFileSync(
+const secondTextAsync = fs.readFileSync(
   './2-Modules/3-fs-module/temp/second.txt',
   'utf-8'
 );
-console.log(secondText);
+console.log(secondTextAsync);
 
 // 2. fs.writeFileSync(file, data, [options])
 // options: object containing encoding, mode & flag
@@ -35,7 +35,7 @@ console.log(secondText);
 // if the file is already exist, then it will overwrite the content.
 // if the file isnot exist, then it will create a new file and add the content.
 
-const thirdTextContent = `Here is the content of third.txt file: ${firstText} || ${secondText}`;
+const thirdTextContent = `Here is the content of third.txt file: ${firstTextAsync} || ${secondTextAsync}`;
 console.log(thirdTextContent);
 
 fs.writeFileSync('./2-Modules/3-fs-module/temp/third.txt', thirdTextContent);

@@ -25,3 +25,5 @@ app.get('/contact', (req, res) => {
 app.listen(5000, () => {
   console.log('Server starting at localhost:5000');
 });
+
+// 2. express.Router([options]):

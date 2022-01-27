@@ -24,3 +24,6 @@ app.listen(port, () => {
 // api vs ssr
 // api => data // res.json()
 // ssr => tempelate // res.render()
+
+// middleware => function that are executed when request are made, have access to request-object and response-object
+// req => middleware => res
